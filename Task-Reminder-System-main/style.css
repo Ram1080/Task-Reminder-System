@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #2C2C34; /* Darker background for better contrast */
+    color: #EAEAEA; /* Light gray for better readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all content */
+}
+
+h1 {
+    font-size: 36px; /* Slightly larger for emphasis */
+    color: #FF6F61; /* Coral color for a vibrant look */
+    margin-bottom: 15px;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form elements */
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #3A3A3D; /* Slightly lighter background for contrast */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.task-form input {
+    margin: 10px 0; /* Adjusted margin for better spacing */
+    padding: 12px; /* Increased padding for comfort */
+    width: 100%; /* Full width for better usability */
+    max-width: 300px; /* Set a max width */
+    font-size: 16px;
+    border: 1px solid #FF6F61; /* Changed border color to match theme */
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+.task-form input:focus {
+    border-color: #FF9A8B; /* Lighter coral on focus */
+}
+
+button {
+    background-color: #FF6F61; /* Coral color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Added transition */
+}
+
+button:hover {
+    background-color: #FF9A8B; /* Lighter coral on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    background-color: #FF4C3B; /* Darker coral on active */
+    transform: translateY(0); /* Reset lift effect */
+}
+
+.task-lists {
+    margin-top: 40px;
+    width: 100%; /* Full width for task lists */
+    max-width: 600px; /* Set a max width for better layout */
+}
+
+.task-lists button {
+    background-color: #007BFF; /* Bootstrap blue */
+    margin: 10px 0; /* Adjusted margin for better spacing */
+}
+
+.task-lists button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.task-lists h2 {
+    margin-top: 20px;
+    font-size: 28px; /* Increased size for better visibility */
+    color: #FF6F61; /* Coral color */
+    text-align: center; /* Centered for better visibility */
+}
+
+.task-list, .reminder-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%; /* Full width for lists */
+}
+
+.task-list li {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0; /* Adjusted margin for better spacing */
+    background-color: #4A4A4D; /* Card-like background */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.reminder-list li {
+    background-color: #5A5A5D; /* Darker background for reminders */
+    padding: 15px;
+    margin: 10px 0; /* Adjusted margin for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.task-list li:hover, .reminder-list li:hover {
+    background-color: #6A6A6D; /* Highlight on hover */
+}
+
+.no-task-message {
+ font-size: 18px;
+    color: #B0B0B0; /* Light gray for better visibility */
+    font-style: italic;
+    text-align: center; /* Centered for better visibility */
+} 
